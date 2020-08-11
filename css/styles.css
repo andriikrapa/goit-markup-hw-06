@@ -828,3 +828,102 @@ footer {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
+
+
+
+
+.modal-form {
+    width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    background: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; 
+}
+
+.form-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+margin: 0;
+margin-bottom: 30px;
+
+color: var(--title-text-color);
+}
+
+.form-field {
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.form-field label {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+}
+
+.form-field-input:focus + .form-field-label,
+.form-field-input:hover + .form-field-label
+{
+    transform: translateY(-30px);
+}
+
+.form-field-input:hover {
+    cursor: pointer;
+    border: 1px solid var(--accent-color)
+}
+
+.form-field input, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.form-field 
+input::placeholder,
+textarea::placeholder
+{
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+
+.form-field.comment {
+    margin-bottom: 20px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-checkbox a {
+    color: var(--accent-color);
+}
+
+.form-checkbox input[type='checkbox'] {
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+}
+
+.form-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
