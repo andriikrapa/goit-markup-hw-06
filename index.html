@@ -52,11 +52,8 @@
     <section class="section hero">
       <div class="contener">
         <h1>Эффективные решения<br>для вашего бизнеса</h1>
-        <a class="button link" href="">Заказать услугу</a>
+        <a class="button link" href="" data-modal-open>Заказать услугу</a>
       </div>
-      <!-- <div class="backdrop is-hiden" data-backdrop>
-        
-      </div> -->
     </section>
 
     <!--Секция О нас-->
@@ -391,6 +388,54 @@
       </div>
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+
+    <form action="#" class="modal-form">
+    
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+      <button class="modal-close-btn">X</button>
+    
+      <div class="form-field">
+        <input class="form-field-input" type="text" name="name" id="name" placeholder=" " />
+        <label class="form-field-label" for="name">Имя</label>
+      </div>
+    
+      <div class="form-field">
+        <input class="form-field-input" type="tel" name="tel" id="tel" placeholder=" " />
+        <label class="form-field-label" for="tel">Телефон</label>
+      </div>
+    
+      <div class="form-field">
+        <input class="form-field-input" type="email" name="mail" id="mail" placeholder=" " />
+        <label class="form-field-label" for="mail">Почта</label>
+      </div>
+    
+      <div class="form-field comment">
+        <textarea class="form-field-input" name="comment" id="comment" rows="4" placeholder=" "></textarea>
+        <label class="form-field-label" for="comment">Комментарий</label>
+      </div>
+    
+      <div class="form-checkbox">
+        <input type="checkbox" name="policy" value="accept-policy" id="policy">
+        <label for="policy">
+          <span class="form-custom-checkbox">
+            <svg>
+              <use href="./images/sprite.svg#form-checked"></use>></use>
+            </svg>
+          </span>
+          Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+        </label>
+      </div>
+    
+      <button class="button form-button" type="submit">Отправить</button>
+    
+    </form>
+
+  </div>
+
+  <script src="./js/modal.js"></script>
 
 </body>
 
